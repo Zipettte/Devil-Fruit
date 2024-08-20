@@ -1,3 +1,5 @@
+local searchComplete = false
+
 repeat wait(5) until game:IsLoaded()
 
 self = {}
@@ -870,8 +872,8 @@ local function CYVHVHQ_fake_script() -- Main.Load
 		self.Status.Text = "Status: No fruit found"
 		wait(1.5)
 		self.Status.Text = "Status: Joining server..."
-		local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
-		module:Teleport(game.PlaceId)
 	end
 end
 coroutine.wrap(CYVHVHQ_fake_script)()
+
+searchComplete = true
