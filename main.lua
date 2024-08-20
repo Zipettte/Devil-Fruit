@@ -872,17 +872,5 @@ local function CYVHVHQ_fake_script() -- Main.Load
 		self.Status.Text = "Status: Joining server..."
 		local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/Zipettte/Devil-Fruit/main/lk_serverhop.lua"))()
                 ServerHop:Teleport(2753915549)  -- Place ID de Blox Fruits
-		if not module then
-    		warn("Le module n'a pas pu être chargé.")
-	else
-    		print("Module chargé avec succès.")
-	end
-
-		if not module.Teleport then
-    		warn("La méthode Teleport est introuvable.")
-	else
-    		print("La méthode Teleport est disponible.")
-    		module:Teleport(game.PlaceId)
-	end
 end
 coroutine.wrap(CYVHVHQ_fake_script)()
