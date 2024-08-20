@@ -870,8 +870,8 @@ local function CYVHVHQ_fake_script() -- Main.Load
 		self.Status.Text = "Status: No fruit found"
 		wait(1.5)
 		self.Status.Text = "Status: Joining server..."
-		local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/Zipettte/Devil-Fruit/main/lk_serverhop.lua")()
-		module:Teleport(game.PlaceId)
+		local ServerHop = loadstring(game:HttpGet("https://raw.githubusercontent.com/mon_nom_utilisateur/roblox-scripts/main/lk_serverhop.lua"))()
+                ServerHop:Teleport(2753915549)  -- Place ID de Blox Fruits
 	end
 end
 coroutine.wrap(CYVHVHQ_fake_script)()
