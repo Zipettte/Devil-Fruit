@@ -872,8 +872,7 @@ local function CYVHVHQ_fake_script() -- Main.Load
 		self.Status.Text = "Status: No fruit found"
 		wait(1.5)
 		self.Status.Text = "Status: Joining server..."
+		searchComplete = true
 	end
 end
 coroutine.wrap(CYVHVHQ_fake_script)()
-
-searchComplete = true
